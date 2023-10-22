@@ -1,0 +1,17 @@
+let a = +prompt("Son kiriting");
+while (isNaN(a) || a == 0) {
+    a = +prompt("Son qaytadan kiriting")
+}
+box = ""
+for (let i = 0; i < a; i++) {
+    for (let j = 0; j < a; j++) {
+        if (i === 0 || i === a - 1 || j === 0 || j === a - 1 || i === j) {
+            box += "⬛"
+        } else {
+            box += "⬜"
+        }
+
+    }
+    console.log(box)
+    box = ""
+}
